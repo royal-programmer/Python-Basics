@@ -1,0 +1,9 @@
+► Character set is a set of valid characters that a language(here, Python) can recognize. A character represents any
+  letter, digit or any other symbol. Python supports Unicode encoding standard. That means Python has the following
+  character set:
+
+1. Letters            | A-Z, a-z
+2. Digits             | 0-9
+3. Special Symbols    | space + - * / ** \ () [] {} // = != == < > , . ' " ''' ; : % ! & # <= >= @ _
+4. Whitespaces        | Blank space, tabs(⇋), carriage return(↵), newline, formfeed.
+5. Other characters   | Python can process all ASCII and unicode characters as a part of data or literals.

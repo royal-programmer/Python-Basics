@@ -1,0 +1,117 @@
+► In a passage of text, individual words and punctuation marks are called Tokens or Lexical units or Lexical elements.
+  The smallest individual unit in a program is known as a Token or Lexical unit.
+  Python has following tokens:
+
+ 1.Keywords
+ 2.Identifier (Names)
+ 3.Literals
+ 4.Operators
+ 5.Punctuators
+
+
+1. Keywords:- Keywords are the words that convey a special meaning to the language compiler/interpreter. These are
+           reserved for special purpose and must not be used as normal identifier names.
+
+           Python programming language contains the following keywords:[all without < >]
+
+           <False>     <assert>     <del>     <from>     <in>     <or>     <while>
+           <break>      <elif >      <for>      <is>     <pass>   <with>   <finally>
+           <raise>     <global>     <and>     <else>     <if>  <continue>  <yield>
+          <nonlocal>   <return>     <def>      <as>    <import>   <not>    <async>
+           <lambda>    <except>     <try>     <True>    <None>   <class>   <await>
+
+2. Identifier (Names):- Identifier are fundamental building blocks of a program and are used as the general terminology
+            for the names given to different part of the program viz. variables, objects, classes, functions, lists,
+            dictionaries etc.
+
+            Identifier forming rules of Python are being specified below:
+            ► An identifier is an arbitrarily long sequence of letters and digits.
+            ► The  first character must be a letter; the underscore (_) counts as a letter.
+            ► Upper and lower-case letters are different. All characters are significant.
+            ► The digits 0 through 9 can be part of identifier except for the first character.
+            ► Identifiers are unlimited in length. Case is significant i.e., Python is case sensitive as it treats
+               upper and lower-case characters differently.
+            ► An identifier must be not be a keyword of Python.
+            ► An identifier cannot contains any special character except for underscore(_).
+
+3. Literals/Values:- Literals are data items that have a fixed/ constant value.
+            Python allows several kind of literals, which are being given below.
+    3.1. String Literals:- A string literal is a sequence of characters surrounded by quotes
+            (single or double or triple quotes).
+            String literals can either be single-line string or multi-line strings.
+        3.1.1 Single-line: Strings that are writing in only one line.
+            Eg,. >>> Text1 = "Hello World"
+        3.1.2 Multi-Line: Strings that are writing in multiple lines. Single or double quotes require a backslash(\) in
+            the end of every lines but with triple quotes no backslash is needed in intermediate lines.
+            Eg,. >>> Text2 = "Hello\
+                    World"
+                >>> Text3 = '''Hello
+                    World'''
+
+    3.2. Numeric Literals:- Numeric Literals are numeric values or numbers used in Python. These are of two types,
+            which are given below.
+        3.2.1. Integer(int): Ranges from negative whole number to positive whole number including zero. The integer
+            literals can be written in:
+            ► Decimal form: Any integer that are formed with numbers(0, 9). Eg,. 1234, 9874 etc.
+            ► Octal form: Integers that begin with 0o (zero followed by letter o). Eg,. 0o15, 0o66 etc.
+              Note: Here 8 and 9 digits are invalid.
+            ► Hexadecimal form: Integers that begin 0x (zero followed by letter x). Eg,. 0x56, 0xAF etc.
+              Note: Here valid digits are (0-9) and letters (A-F).
+        3.2.2. Float(float):Any integer that contains decimal(.). These can be written in two form:
+            ► Fractional form: Eg,. -13.5, .65, 9. etc.
+            ► Exponential form: Eg,. 0.17E5, 1.E9, .9E2 etc.
+        3.2.3. Complex Number Literals:- Complex Numbers are those in the form of a+bJ, where a and b are floats and
+            J(or j) represents √-1, which is an imaginary number). a is the real part and b is the imaginary number.
+
+    3.3. Boolean Literals:- Theses are of only two types, which are True and False.
+
+    3.4. Special Literals None:- Python has only one special literal, which is None. This is used to indicate absence
+            of value.
+
+4. Operators:- Operators are token that perform some computation action in python programming.These operators are of
+            many types, which are listed below:
+    4.1. Arithmetic Operators:
+        +   Addition
+        -   Subtraction
+        *   Multiplication
+        /   Division
+        %   Modulus/Division
+        **  Exponent(Raised to power)
+        //  Floor Division
+    4.2. Bitwise Operators:
+        &   Bitwise AND
+        ^   Bitwise XOR (excluding OR)
+        |   Bitwise OR
+    4.3. Shift Operators:
+        <<  Shift Left
+        >>  Shift Right
+    4.4. Identity Operators:
+        is          same?
+        is not      not same?
+    4.5. Relational Operators:
+        <   Less than
+        >   Greater than
+        <=  Less than or equal to
+        >=  Greater than or equal to
+        ==  Equal to
+        !=  Not equal to
+    4.6. Assignment Operators
+        =   Assignment
+        /=  Assign quotient
+        +=  Assign sum
+        -=  Assign difference
+        *=  Assign Product
+        %=  Assign Remainder
+        **= Assign Exponent
+        //= Assign Floor division
+    4.7. Logical Operators
+        and     Logical AND
+        or      Logical OR
+    4.8. Membership operators
+        in      whether variable
+        not in  whether variable not in sequence
+
+5. Punctuators:- Symbols used in programming language(Here, Python) to organise programming-sentence. Ignoring this
+            raise to some error in th code. Most common punctuators in Python are listed below:
+                                ' " # \ () [] {} @ , : . ` =
+

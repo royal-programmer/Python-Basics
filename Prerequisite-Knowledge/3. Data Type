@@ -1,0 +1,43 @@
+Data type:- In computer science and computer programming, a data type is an attribute of data which tells the compiler
+            or interpreter how the programmer intends to use the data. Most programming languages support basic data
+            types of integer numbers (of varying sizes), Floating-point numbers (which approximate real numbers),
+            characters and Booleans. A data type constrains the values that an expression, such as a variable or a
+            function, might take. This data type defines the operations that can be done on the data, the meaning of
+            the data, and the way values of that type can be stored. A data type provides a set of values from which an
+            expression (i.e. variable, function, etc.) may take its values. Types of data types are listed below:
+    1. None:- It is a data type that has no value. It is usually used for bypassing any variable, user defined functions
+            and so on. To work on that later on.
+            Eg: >>> def student():
+                        None
+            Here, Interpreter will not execute any error, though an empty function is being defined.
+    2. Numeric:- Numeric data is of four types, these types are listed below:
+        2.1. Integers:- Range negative to positive including 0. Eg: -958, 0157, 94562, -8745, etc.
+        2.2. Float:- Number with decimal symbol. Eg: 12.0, -95., .58, -14.5, 6E6, -98E4, etc.
+             2.2.1 Fractional Form: Eg: 65.2, -98., .25, -25.3, etc.
+             2.2.2. Exponential Form: Eg: 65E9, -98E2, 2.3E9, etc.
+        2.3. Complex:- It is in the form a+bj, where a and b are floats and J(or j) represents √-1, which is an imaginary
+             number). a is the real part and b is the imaginary number.
+        2.4. Bool:- It is just True and False. It is placed in numeric data type because the value True and False held
+             are 1 and 0 respectively.
+    3. Sequence Type:-
+        3.1. List:- It is a modifiable group of comma separated values of any datatype  between two square brackets.
+             Eg: >>> lst = [12, "apples", .25, "grapes", -98, "oranges"]
+        3.2. Tuple:- It is a non modifiable group of comma separated values of any data between two curve brackets.
+             Eg: >>> tpl = (52, "Harry", 95, "Carry", 75, "Siddharth")
+        3.4. String:- It is written between single or double or triple quotes.
+             Eg: >>> str = "bat", "ball", "wicket" ,etc.
+        3.5. Range:- It is a iterate type of data where values are written in the form of (start, end, steps).
+             Eg: >>> rng1 = (1,9)
+                 Here, it will print from 1 to 8 i.e. 1, 2, 3, 4, 5, 6, 7, 8.
+                 >>> rng2 = (1, 9, 2)
+                 Here, it will print from 1 to 8 but leaving 1 in between i.e. 1, 3, 4, 5, 6, 8.
+    4. Non sequence Type:-
+        4.1. Dictionary/ Mapping:- It is a data type where values are connected to a keys. It is written in between
+             curly brackets. It is mutable and unordered.
+             Eg: >>> dic = {"Apple":"Fruit", "Potato":"Vegetable"}
+             Here, Apple, Potato are keys whereas Fruit and Vegetable are
+             Values. NOTE: Keys cannot be repeated while Values can be repeated many times.
+        4.2. Set:- It is a data type where similar values are not executed while printing and values are written in
+             between two curly brackets.
+             Eg: >>> s = {21, 25, 65, 45, 95, 21, 45, 65}
+             Here, Only 21, 25, 65, 45, 95 will be printed.

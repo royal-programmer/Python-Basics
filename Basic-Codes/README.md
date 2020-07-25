@@ -6,4 +6,7 @@ NOTE: Not to use for shortcuts. Use only with full understanding, better take th
 
 A short description of the provided codes are given below:
 
-1. Binary search(Iteration).py: It is fully user-customizable binary search programme that is based on iteration method. The list is created by the user itself, will automatically    be sorted and it is ready to go.
+1. Binary search(Iteration).py: It is fully user-customizable binary search programme that is based on iteration method. The list is created by the user itself, that will            automatically be sorted and the programme is ready to go.
+
+2. Binary search(Recursion).py: It is also fully user-customizable binary search programme as above that is based on recursion method. The list is created by the user itself, that    will automatically be sorted and the programme is ready to go.
+

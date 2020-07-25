@@ -14,3 +14,4 @@ A short description of the provided codes are given below:
 
 4. Inserting element in sorted list.py: It is a programme where user input values (int data type) in a sorted premade list without effecting the sequence.
 
+4. Inserting element in sorted list.py: It is also a programme where user input values (int data type) in a sorted premade list but using a special module named bisect without        effecting the sequence.

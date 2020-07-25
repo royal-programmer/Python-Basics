@@ -12,3 +12,5 @@ A short description of the provided codes are given below:
 
 3. Check_Palindrome.py: It is a programme to find whether a given string is palindrome or not. Here, string slicing method is used. 
 
+4. Inserting element in sorted list.py: It is a programme where user input values (int data type) in a sorted premade list without effecting the sequence.
+

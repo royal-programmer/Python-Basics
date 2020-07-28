@@ -1,0 +1,15 @@
+In Python, data types can be broadly categorized into two - mutable and immutable types, in simple words or modifiable
+and non-modifiable types.
+
+1. Immutable Type:- These types are those that can never change their value in place. In Python, the following types are,
+    1.1. Integers.
+    1.2. Floats.
+    1.3. Booleans.
+    1.4. Strings.
+    1.5. Tuples.
+
+2. Mutable Type:- The mutable types are those whose values can be changed in place. There are only three types of
+                  mutable data types in Python. These are,
+    2.1. Lists.
+    2.2. Dictionaries.
+    2.3. Sets.

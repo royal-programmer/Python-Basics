@@ -1,0 +1,127 @@
+NOTE: String is itself a vast concept. So, this documentation of string is divided into two parts.
+
+Strings:- In Python, a string is a immutable data type that's typically used to represent text. A string could be any
+          series of characters, including letters, numbers, special characters(including spaces), etc. Strings are
+          indicated in Programming Language (Python) with quotes(single or double).
+          For Eg: "abc", '123' (here, 123 is a string not integer), "@#$", '1a2b3c', "a", etc.
+    NOTE:- We must take care of 'Escape Sequence' of Python Language while writing string.
+
+Strings are Sequence of Characters:
+    A Python string is a sequence of characters and each character can be individually accessed using its index.
+    For Eg: >>> name = "Python"
+        In Python characters are indexed from left to right starting with 0 and from right to left starting with -1.
+            Here, name[0] = 'P' = name[-6]
+                  name[1] = 'y' = name[-5]
+                  name[2] = 't' = name[-4]
+                  name[3] = 'h' = name[-3]
+                  name[4] = 'o' = name[-2]
+                  name[5] = 'n' = name[-1]
+
+► Strings in Python are stored by storing each character separately in contiguous locations.
+► The characters of the strings are given two-way indices:
+   ■ 0, 1, 2, .... int the forward direction and
+   ■ -1, -2, -3, .... in the backward direction.
+
+Return a String's Length:
+    You can use the len() function to return a string's length. To do this, simply pass the string in as an argument to
+    the function.
+    For Eg: >>> word = "Python"
+            >>> print(len(word))
+    Result: 6
+    Also, >>> line = "Python is a programming language"
+          >>> print(len(line))
+    Result: 32
+
+Numbers in Strings:
+    If you need to store numbers that may have calculations performed on them, don't make them a string. There's a
+    difference between the following two declarations:
+        >>> a = 1
+        >>> a = "1"
+    In the first line, the value 1 is a number. In the second line, it's a string.
+    Including numbers in a string simply makes them part of that string. So you can't do things like add two numbers
+    together if they're actually a string. Arithmetic operators have a different purpose when used on strings.
+    For example, when working with numbers, the plus sign (+) adds two numbers together, but when working with strings,
+    it concatenates the strings together.
+        So doing this:
+            >>> print(1+2)
+            >>> print("1"+"2")
+        RESULT: 3
+                12
+    The first line is a result of adding two numbers. The second line is a result of concatenating two strings.
+
+Detecting Numbers in Strings:
+    Python includes functions that allow you to detect whether a string consists solely of numbers. More specifically,
+    it includes the isnumeric(), isdigit(), and isdecimal() functions. These allow you to be specific about the type of
+    number the string contains.
+    These functions return true if all characters in the string match (and there's at least one character). Otherwise
+    they return false.
+
+    Here's an example of using isnumeric():
+        >>> a = "pic123"
+        >>> b = "21344"
+        >>> print (a.isnumeric())
+        >>> print (b.isnumeric())
+    RESULT:
+        False
+        True
+    The isnumeric() function is broad and it includes all results that would be returned by isdigit() and isdecimal().
+
+Quotes in Strings:
+    You'll get an error if you do this:
+
+    >>> eg1 = "Once again he asked "How long is a piece of string?""
+
+    You'll get an error because the string is enclosed in double quotes, but the actual string itself also contains
+    double quotes. The same issue will apply if you use single quotes for both purposes.
+
+    In this case you can use the backslash (\) to escape the quote characters within the string.
+
+    In Python, the backslash is used to escape characters that otherwise have a special meaning, such as the quote
+    character, newline, tab, and even the backslash itself.
+
+    So, we can change the above code to this:
+
+    >>> eg2 = "Once again he asked \"How long is a piece of string?\""
+    print(eg2)
+    RESULT: Once again he asked "How long is a piece of string?"
+
+    Another way to deal with this issue is to use double quotes to enclose the string, but single quotes within the
+    string (or vice-versa).
+
+    >>> eg3 = "Once again he asked 'How long is a piece of string?'"
+    # OR
+    >>> eg4 = 'Once again he asked "How long is a piece of string?"'
+    Strings that Span Multiple Lines
+    There are a couple of different ways to make a string span multiple lines.
+
+Escape Sequence:
+    Just as we used the backslash to escape the double quotes, we can use an escape sequence to force a string to span
+    multiple lines.
+
+    >>> msg = "ATTENTION!\rFor those about to rock, we salute you!"
+    >>> print(msg)
+    RESULT: For those about to rock, we salute you!
+
+    NOTE: We have fully discussed about Escape Sequence in the previous documentation.
+
+String Operations:
+    ■ Basic Operations: The two basic operators of string are: + and *. In mathematics they are addition and
+            multiplication respectively. But in Python language, they perform as concatenation and replication.
+        ► String concatenation Operator (+): The + operator creates a new string by joining the two operand strings.
+           Here, original strings are not modified as strings
+           For  Eg: >>> "tea" + "pot"
+           Result: 'teapot'
+           NOTE: You cannot combine a number and a string as operand with a + operator.
+           For Eg: >>> '2' + 3
+           Result: TypeError: can only concatenate str (not "int") to str
+        ► String Replication Operator (*): The * operator when used with number (i.e., when both operands are number),
+           it performs multiplication and returns the product of the two number operands.
+           NOTE: To use a * with strings, you need two types of operands - a string and a number, i.e.,
+           as a (number * string) or (string * number).
+           For Eg: >>> "learn!" * 3
+           Result: "learn!learn!learn!"
+           NOTE: You cannot have a strings as both the operands with a * operator.
+           For Eg: >>> "1" * "2"
+           Result: TypeError: can't multiply sequence by non-int of type 'str'.
+
+

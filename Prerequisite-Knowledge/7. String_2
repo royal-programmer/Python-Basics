@@ -1,0 +1,110 @@
+NOTE: This is the second part of the Topic "String". It is the continuation of "String_1". So, if you are here without
+      gone through the first part please go through it before this for having a clear understanding.
+
+Membership Operators:
+    There are two membership operators for strings(including all other sequence data type). These are 'in' and 'not in'.
+
+    ► in        Returns True if a character or a substring exists in the given string; otherwise it returns False.
+        Format = <string> in <string>
+        For Eg: >>> "a" in "Pen"
+        Result: False
+        Reason: 'a' is not present in 'Pen'
+        Again, >>> "ast" in "blast"
+        Result: True
+
+    ► not in    Returns True if a character or a substring does not exists in the given string; otherwise it returns False.
+        Format = <string> not in <string>
+        For Eg: >>> "a" not in "Hat"
+        Result: False
+        Reason: 'a' is present in 'Hat'
+        Again, >>> "pen" not in "blast"
+        Result: True
+
+    NOTE: These are case sensitive.
+        For Eg: >>> "mo" in "Moon"
+        Result: False
+        Reason: Case is different
+        Again, >>> "pe" not in "Pen"
+        Result: True
+
+Comparison Operators:
+    The comparisons using all relational operators(<,<=,>,>=,==,!=) are based on the standard character-by-character
+    comparison rules for Unicode(i.e., dictionary order).
+    For Eg: >>> "a" =  "a"
+    Result: True
+    Again, >>> "a" = "A"
+    Result: False
+    Reason: Letter case is different.
+
+    Equality and non equality in strings are easier to determine because it goes for exact character matching for
+    individual letters including the case of the letter. But for other comparison, we should know the Unicode Value
+    (Ordinal Value) as well as ASCII value of the characters. For most of the characters, the ASCII values and Unicode
+    values are the same.
+
+    Character           Ordinal Value
+    '0' to '9'          48 to 57 (Correspondingly)
+    'A' to 'Z'          65 to 90 (Correspondingly)
+    'a' to 'z'          97 to 122 (Correspondingly)
+    Therefore, Upper case letters are considered smaller than the Lower case letters.
+
+Determining Ordinal/Unicode Value of a Single Character:
+    Python has a built-in function ord() that takes a single character and returns the corresponding ordinal Unicode
+    Value. It is used as per following format: ord(<single-character>)
+    For Eg: >>> ord("A")
+    Result: 65
+
+    The opposite of ord() function is chr() i.e., it returns the corresponding character of the ordinal value.
+    Format: chr(<int>)
+    For Eg: >>> chr(65)
+    Result: 'A'
+
+String Slice:
+    It refers to the part of the string, where strings are sliced using a range of indices,i.e., for a string say name,
+    the format of slicing is "name[n:m:s]"", where n,m,s are integer and n refers to starting indices, m refers to the
+    ending indices and s refers to the step of slicing.
+    For Eg: >>> word = "Programming"
+            >>> word[2:8:2]
+    Result: 'orm'
+
+    NOTE: By string slicing, we can reverse a string in a very easy way i.e.,
+          >>> word[::-1]
+          Result: 'gnimmargorP'
+
+String Function and Methods:
+    Python has some built-in function and methods for string manipulation. The string manipulation methods that are
+    being discussed below can be applied to string as per following syntax:
+        <stringObject>.<method name>()
+    In the following, we are referring to <stringObjects> as string ONLY, where the word string need to replace with a
+    legal string(i.e., either a string literal or a string variable that holds a string value).
+
+    string.capitalize()                 Returns a copy of the string with its first character capitalized.
+    string.find(sub[, start[,  end]])   Returns the lowest index in the string where the substring sub is found within the
+                                        slice range of start and end.
+                                        Returns -1 if sub is not found.
+    string.isalnum()                    Returns True if the character in the string are alphanumeric (alphabets or numbers)
+                                        and there is at least one character, False otherwise.
+    string.isalpha()                    Returns True if all characters in the string are alphabetic and there is at least
+                                        one character, False otherwise.
+    string.isdigit()                    Returns True if all the characters in the strings are digits. There must be at
+                                        least one character, otherwise False.
+    string.islower()                    Returns True if all cased characters in the string are lowercase. There must be at
+                                        least one cased character, otherwise it returns False.
+    string.isspace()                    Returns True if there are only whitespace characters in the string. There must
+                                        be at least one character, otherwise it returns False.
+    string.isupper()                    Returns True if all cased characters in the string are uppercase. There must be at
+                                        least one cased character, otherwise it returns False.
+    string.lower()                      Returns a copy of the string converted to lowercase.
+    string.upper()                      Returns a copy of the string converted to uppercase.
+    string.lstrip([char])               Returns a copy of the string with leading characters removed. If used without any
+                                        argument, it removes the leading whitespace. One can use the optional chars
+                                        argument to specify a set of character to be removed.
+                                        The chars argument is not a prefix ; rather all combination of its values (all
+                                        possible substrings from the given string argument chars) are stripped when they
+                                        lead the string.
+    string.rstrip([char])               Returns a copy of the string with trailing characters removed. If used without any
+                                        argument, it removes the leading whitespace. One can use the optional chars
+                                        argument to specify a set of character to be removed.
+                                        The chars argument is not a suffix ; rather all combination of its values (all
+                                        possible substrings from the given string argument chars) are stripped.
+
+
